@@ -20,7 +20,7 @@ public class HelloWorldController {
       DateTimeFormatter formatter=DateTimeFormatter.ofLocalizedDate(FormatStyle.FULL);
       LocalDate date=LocalDate.now();
       model.addAttribute("date", date.format(formatter));
-      
+      System.out.println("Nothing in here.");
       return "index";
    }
 }
